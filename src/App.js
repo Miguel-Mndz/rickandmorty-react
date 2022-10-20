@@ -19,11 +19,11 @@ function App() {
       <header className="App-header">
         <h1 className='title'>Welcome to </h1>
         {characters ? (
-          <Characters characters={characters} />
+          <Characters characters={characters} setCharacters={setCharacters}/>
         ) : (
           <>
             <img src={imgHome} alt='Rick & Morty' className='img-home' />
-            <button onClick={api} className='btn-search'>Mostrar personajes</button>
+            <button onClick={api} className='btn-search'>Show Characters</button>
           </>
         )}
       </header>
