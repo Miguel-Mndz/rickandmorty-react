@@ -13,10 +13,10 @@ export default function Characters(props) {
             <div className="container-characters">
                 {characters.map((character, index) => (
                     <div className="character-container" key={index}>
-                        <div>
+                        <div className="image-character">
                             <img src={character.image} alt={character.name} />
                         </div>
-                        <div>
+                        <div className="info-character">
                             <h1>{character.name}</h1>
                             <h6>
                                 {character.status === 'Alive' ? (
